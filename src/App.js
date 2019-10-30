@@ -8,6 +8,9 @@ function App() {
         <h1>Time For Zeros</h1>
         <h3> Nothing Matters</h3>
       </header>
+      <body>
+        <button>Click Me</button>
+      </body>
     </div>
   );
 }
