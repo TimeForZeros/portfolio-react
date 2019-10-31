@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
 import './App.css';
 
-let title = 'Time For Zeros';
-function zeroChange(){
-  let arr = title.split(' ');
+function ZeroChange(){
+  let arr = this.state.title.split(' ');
   for (let i = 0; i < arr.length; i++) {
     let zeros='';
     for (let j = 0; j < arr[i].length; j++) {
@@ -11,21 +11,42 @@ function zeroChange(){
     }
     arr[i] = zeros;
   }
- return this.setState = {title: arr.join('_')};
+ this.setState = {title: arr.join('_')};
 };
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>{title}</h1>
-        <h3> Nothing Matters</h3>
-      </header>
-      <body>
-        <button onClick={zeroChange}>Click Me</button>
-      </body>
-    </div>
-  );
+class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      title: 'Time For Zeros'
+    }
+  }
+  handleZero = () => {
+    let arr = this.state.title.split(' ');
+    for (let i = 0; i < arr.length; i++) {
+      let zeros='';
+      for (let j = 0; j < arr[i].length; j++) {
+        zeros += '0';
+      }
+      arr[i] = zeros;
+    }
+    let zeroed = arr.join('_');
+   return this.setState = {title: zeroed};
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <h1>{this.state.title}</h1>
+          <h3> Nothing Matters</h3>
+        </header>
+        <body>
+          <button onClick={this.handleZero}>Click Me</button>
+        </body>
+      </div>
+    );
+  }
 }
 
 export default App;
