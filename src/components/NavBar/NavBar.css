@@ -1,0 +1,8 @@
+.nav-container{
+    display: flex;
+    align-items: center;
+}
+
+.nav-item{
+    margin: 0 5vmin 0 5vmin;
+}

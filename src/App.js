@@ -1,47 +1,51 @@
-import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
-import './App.css';
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import { Route, Switch, Redirect, Link } from "react-router-dom";
 
-function ZeroChange(){
-  let arr = this.state.title.split(' ');
+import "./App.css";
+import NavBar from "./components/NavBar/NavBar";
+
+function ZeroChange() {
+  let arr = this.state.title.split(" ");
   for (let i = 0; i < arr.length; i++) {
-    let zeros='';
+    let zeros = "";
     for (let j = 0; j < arr[i].length; j++) {
-      zeros += '0';
+      zeros += "0";
     }
     arr[i] = zeros;
   }
- this.setState = {title: arr.join('_')};
-};
+  this.setState = { title: arr.join("_") };
+}
 
 class App extends Component {
-  constructor(){
+  constructor() {
     super();
     this.state = {
-      title: 'Time For Zeros'
-    }
+      title: "Time For Zeros"
+    };
   }
   handleZero = () => {
-    let arr = this.state.title.split(' ');
+    let arr = this.state.title.split(" ");
     for (let i = 0; i < arr.length; i++) {
-      let zeros='';
+      let zeros = "";
       for (let j = 0; j < arr[i].length; j++) {
-        zeros += '0';
+        zeros += "0";
       }
       arr[i] = zeros;
     }
-    let zeroed = arr.join('_');
-   return this.setState = {title: zeroed};
-  }
+    let zeroed = arr.join("_");
+    return (this.setState = { title: zeroed });
+  };
 
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>{this.state.title}</h1>
-          <h3> Nothing Matters</h3>
+          <NavBar title={this.state.title} />
         </header>
         <body>
+        <h1>{this.state.title}</h1>
+        <h3> Nothing Matters</h3>
           <button onClick={this.handleZero}>Click Me</button>
         </body>
       </div>
