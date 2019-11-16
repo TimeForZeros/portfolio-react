@@ -1,14 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Card.css";
 
-const NavBar = props => {
+const Card = props => {
   return (
-    <div className='nav-container'>
-      <Link to="/" className='nav-item'>Home</Link>
-      <Link to="/portfolio" className='nav-item'>Portfolio</Link>
+    <div className='card-container'>
+        <div className='card'>
+            This is a Basic Card (change this)
+        </div>
     </div>
   );
 };
 
-export default NavBar;
+export default Card;

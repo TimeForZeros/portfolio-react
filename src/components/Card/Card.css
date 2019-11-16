@@ -1,0 +1,8 @@
+.card-container {
+    display: flex;
+    border-style: dotted;
+    justify-content: space-around;
+    width: 50vw;
+}
+.card {
+}

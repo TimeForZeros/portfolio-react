@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import { Route, Switch, Redirect, Link } from "react-router-dom";
-
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
+import Card from "./components/Card/Card";
 
 function ZeroChange() {
   let arr = this.state.title.split(" ");
@@ -44,9 +44,12 @@ class App extends Component {
           <NavBar title={this.state.title} />
         </header>
         <body>
-        <h1>{this.state.title}</h1>
-        <h3> Nothing Matters</h3>
-          <button onClick={this.handleZero}>Click Me</button>
+          <div className="item-container">
+            <h1>{this.state.title}</h1>
+            <h3> Nothing Matters</h3>
+            <Card />
+            <button onClick={this.handleZero}>Click Me</button>
+          </div>
         </body>
       </div>
     );
