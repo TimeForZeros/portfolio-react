@@ -1,4 +1,6 @@
 import React from "react";
+import About from "./About/About";
+import './Body.css';
 
 let Body = props => {
   return (
@@ -9,6 +11,7 @@ let Body = props => {
         </div>
         <section>
             <h2> About</h2>
+            <About />
             <h2> Projects</h2>
         </section>
     </div>
