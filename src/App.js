@@ -4,6 +4,7 @@ import { Route, Switch, Redirect, Link } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
 import Body from "./components/Body/Body";
+import Footer from './components/Footer/Footer';
 
 function ZeroChange() {
   let arr = this.state.title.split(" ");
@@ -35,18 +36,20 @@ class App extends Component {
     }
     let zeroed = arr.join("_");
     return this.setState({ title: zeroed });
-  }
-
-
+  };
 
   render() {
-
     return (
       <div className="App">
         <header className="App-header">
           <NavBar title={this.state.title} />
         </header>
-        <Body title={this.state.title} />
+        <body>
+          <Body title={this.state.title} />
+        </body>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     );
   }
