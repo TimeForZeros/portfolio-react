@@ -1,0 +1,26 @@
+.web-section {
+    padding: 10px;
+    margin: 20px 40px;
+    background-color: rgb(162, 199, 201);
+}
+
+.animation-section {
+    padding: 10px;
+    margin: 20px 40px;
+    background-color: rgb(162, 199, 201);
+}
+
+.digital-media-section {
+    padding: 10px;
+    margin: 20px 40px;
+    background-color: rgb(162, 199, 201);
+}
+
+.project-header {
+    font-size: 36px;
+}
+
+.project-title {
+    font-size: 32px;
+
+}
