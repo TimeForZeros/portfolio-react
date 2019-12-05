@@ -34,10 +34,13 @@ class App extends Component {
       arr[i] = zeros;
     }
     let zeroed = arr.join("_");
-    return (this.setState = { title: zeroed });
-  };
+    return this.setState({ title: zeroed });
+  }
+
+
 
   render() {
+
     return (
       <div className="App">
         <header className="App-header">
