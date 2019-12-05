@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { Route, Switch, Redirect, Link } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
+import Body from "./components/Body/Body";
 
 function ZeroChange() {
   let arr = this.state.title.split(" ");
@@ -45,12 +46,7 @@ class App extends Component {
         <header className="App-header">
           <NavBar title={this.state.title} />
         </header>
-        <body>
-          <div className="item-container">
-            <h1>{this.state.title}</h1>
-            <h3> Nothing Matters</h3>
-          </div>
-        </body>
+        <Body title={this.state.title} />
       </div>
     );
   }
