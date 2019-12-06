@@ -43,13 +43,16 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <NavBar title={this.state.title} />
+          <Link to='/footer'><p>Test</p> </Link>
         </header>
         <body>
           <Body title={this.state.title} />
         </body>
+        <Route path='/footer'>
         <footer>
           <Footer />
         </footer>
+        </Route>
       </div>
     );
   }
