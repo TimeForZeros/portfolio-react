@@ -48,11 +48,9 @@ class App extends Component {
         <body>
           <Body title={this.state.title} />
         </body>
-        <Route path='/footer'>
         <footer>
           <Footer />
         </footer>
-        </Route>
       </div>
     );
   }
