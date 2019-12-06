@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-
-
 body {
     position: relative;
     min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
-}
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Roboto Mono', monospace;
 
+}
 
 .title-container {
 
@@ -22,6 +19,7 @@ body {
     padding: 10px;
     background-color: rgb(67, 107, 109);
     border-radius: 15px;
+    
 }
 
 .section-title {

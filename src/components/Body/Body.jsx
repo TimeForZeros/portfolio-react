@@ -11,11 +11,11 @@ import "./Body.css";
 
 let Body = props => {
   return (
-    <div>
+    <body>
       <div className="title-container">
         <h1 className='title'>{props.title}</h1>
       </div>
-      
+
       <Route path='/About'>
       <section className="section-container">
         <h2 className='section-title'> About</h2>
@@ -29,7 +29,7 @@ let Body = props => {
         <Portfolio />
       </section>
       </Route>
-    </div>
+    </body>
   );
 };
 

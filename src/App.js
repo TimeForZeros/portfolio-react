@@ -41,15 +41,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
           <NavBar title={this.state.title} />
-        </header>
-        <body>
           <Body  title={this.state.title} />
-        </body>
-        <footer>
           <Footer />
-        </footer>
       </div>
     );
   }
