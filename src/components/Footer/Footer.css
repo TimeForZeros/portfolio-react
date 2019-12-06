@@ -4,13 +4,14 @@ footer {
     background-color: rgb(73, 81, 82);
     position: relative;
     bottom: 0;
-    width: 100%;
     display: flex;
+    font-family: 'Roboto', sans-serif;
 
 }
 
 footer * {
     color: white;
     justify-content: space-between; 
+    width: 100%;
 
 }

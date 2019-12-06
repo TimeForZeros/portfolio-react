@@ -45,7 +45,7 @@ class App extends Component {
           <NavBar title={this.state.title} />
         </header>
         <body>
-          <Body title={this.state.title} />
+          <Body  title={this.state.title} />
         </body>
         <footer>
           <Footer />
