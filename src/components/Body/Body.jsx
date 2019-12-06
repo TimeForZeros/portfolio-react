@@ -1,21 +1,22 @@
-import React from 'react';
+import React from "react";
 import About from "./About/About";
-import Portfolio from './Portfolio/Portfolio';
-import './Body.css';
+import Portfolio from "./Portfolio/Portfolio";
+import "./Body.css";
 
 let Body = props => {
   return (
-    <div >
-        <div className="item-container">
-          <h1>{props.title}</h1>
-          <h3> Nothing Matters</h3>
-        </div>
-        <section>
-            <h2> About</h2>
-            <About />
-            <h2> Projects</h2>
-            <Portfolio />
-        </section>
+    <div>
+      <div className="title-container">
+        <h1 className='title'>{props.title}</h1>
+      </div>
+      <section className="section-container">
+        <h2 className='section-title'> About</h2>
+        <About />
+      </section>
+      <section className="section-container">
+        <h2 className='section-title'> Projects</h2>
+        <Portfolio />
+      </section>
     </div>
   );
 };

@@ -1,0 +1,23 @@
+.title-container {
+
+}
+
+.title {
+    font-size: 64px;
+
+}
+
+.section-container {
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(67, 107, 109);
+}
+
+.section-title {
+    font-size: 48px;
+}
+
+footer {
+    padding: 10px;
+    background-color: rgb(73, 81, 82);
+}
