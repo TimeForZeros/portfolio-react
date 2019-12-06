@@ -1,0 +1,16 @@
+footer {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(73, 81, 82);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+
+}
+
+footer * {
+    color: white;
+    justify-content: space-between; 
+
+}
