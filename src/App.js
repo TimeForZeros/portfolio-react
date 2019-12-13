@@ -40,15 +40,11 @@ class App extends Component {
 
   render() {
     return (
-      <Route path="/">
-        <div className="App">
-          <header className="App-header">
-            <NavBar title={this.state.title} />
-          </header>
-          <Body title={this.state.title} />
+      <div className="App">
+          <NavBar title={this.state.title} />
+          <Body  title={this.state.title} />
           <Footer />
-        </div>
-      </Route>
+      </div>
     );
   }
 }
