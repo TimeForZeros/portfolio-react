@@ -11,21 +11,23 @@ import "./Body.css";
 
 let Body = props => {
   return (
-    <div>
+    <body>
       <div className="title-container">
         <h1 className='title'>{props.title}</h1>
       </div>
+      <Route path='/about'>
       <section className="section-container">
         <h2 className='section-title'> About</h2>
         <About />
       </section>
+      </Route>
       <Route path='/Portfolio'>
       <section className="section-container">
         <h2 className='section-title'> Projects</h2>
         <Portfolio />
       </section>
       </Route>
-    </div>
+    </body>
   );
 };
 

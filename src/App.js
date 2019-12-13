@@ -4,7 +4,7 @@ import { Route, Switch, Redirect, Link } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
 import Body from "./components/Body/Body";
-import Footer from './components/Footer/Footer';
+import Footer from "./components/Footer/Footer";
 
 function ZeroChange() {
   let arr = this.state.title.split(" ");
@@ -40,20 +40,15 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <NavBar title={this.state.title} />
-          <Link to='/footer'><p>Test</p> </Link>
-        </header>
-        <body>
+      <Route path="/">
+        <div className="App">
+          <header className="App-header">
+            <NavBar title={this.state.title} />
+          </header>
           <Body title={this.state.title} />
-        </body>
-        <Route path='/footer'>
-        <footer>
           <Footer />
-        </footer>
-        </Route>
-      </div>
+        </div>
+      </Route>
     );
   }
 }
