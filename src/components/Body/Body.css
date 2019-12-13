@@ -1,5 +1,5 @@
 body {
-    color: rgb(209, 230, 231);
+    color: rgb(206, 249, 252);
     position: relative;
     min-height: 100vh;
     /* font-family: 'Roboto', sans-serif; */
@@ -13,12 +13,13 @@ body {
 
 .title {
     font-size: 64px;
+    text-align:
 }
 
 .section-container {
     margin: 20px;
     padding: 10px;
-    background-color: rgba(30, 35, 36, 0.5);
+    background-color: rgba(46, 78, 85, 0.5);
     /* border-radius: 15px; */
     
 }

@@ -3,8 +3,8 @@
     margin: 16px auto;
     width: 60%;
     min-width: 600px;
-    background-color: rgba(196, 236, 238, 0.8);
-    box-shadow: 0 2px 3px rgb(74, 112, 114);
+    background-color: rgba(64, 150, 155, 0.5);
+    box-shadow: 0 2px 3px rgb(13, 17, 17);
     text-align: center;
 }
 
@@ -15,4 +15,12 @@
 .project-title {
     font-size: 32px;
 
+}
+
+img {
+    width: 80%;
+}
+
+iframe {
+    width: 80%;
 }

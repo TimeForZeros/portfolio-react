@@ -3,7 +3,7 @@
 .App {
   top: 0;
   text-align: center;
-  background-color: rgb(162, 199, 201);
+  background-color: rgb(32, 61, 63);
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -21,7 +21,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 1;
   overflow: hidden;
   /* font-family: 'Roboto', sans-serif; */
   font-family: 'Roboto Mono', monospace;
