@@ -1,9 +1,11 @@
 .nav-container{
     display: flex;
-    align-items: center;
 
 }
 
 .nav-item{
-    margin: 0 5vmin 0 5vmin;
+    margin: 0 4vmin 5px 4vmin;
+    font-size: 3vh;
+    color: white;
+    text-decoration: none;
 }

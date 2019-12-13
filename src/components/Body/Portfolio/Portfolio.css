@@ -1,22 +1,8 @@
-.web-section {
+.section-header {
     padding: 10px;
     margin: 16px auto;
-    background-color: rgba(196, 236, 238, 0.8);
-    box-shadow: 0 2px 3px rgb(74, 112, 114);
-    text-align: center;
-}
-
-.animation-section {
-    padding: 10px;
-    margin: 16px auto;
-    background-color: rgba(196, 236, 238, 0.8);
-    box-shadow: 0 2px 3px rgb(74, 112, 114);
-    text-align: center;
-}
-
-.digital-media-section {
-    padding: 10px;
-    margin: 16px auto;
+    width: 60%;
+    min-width: 600px;
     background-color: rgba(196, 236, 238, 0.8);
     box-shadow: 0 2px 3px rgb(74, 112, 114);
     text-align: center;
