@@ -13,13 +13,14 @@ body {
 
 .title {
     font-size: 64px;
-    text-align:
+    text-align: center;
 }
 
 .section-container {
-    margin: 20px;
+    margin: auto;
     padding: 10px;
     background-color: rgba(46, 78, 85, 0.5);
+    width: 80%;
     /* border-radius: 15px; */
     
 }
